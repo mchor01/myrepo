@@ -81,8 +81,10 @@
                 <p>
                     <label for="favColor">What is your favorite color?</label>
                     
-                    <select name="favorite" id="favColor">
-                        
+                    <select name="favoriteColor" id="favColor">
+
+                        <option value="">--Choose a Color--</option>
+
                         <option value="red">Red</option>
                         
                         <option value="silver">Silver</option>
@@ -100,9 +102,40 @@
                     <input type="range" id="scrollbar" min="0" max="100" name="scrollbar">
 
                 </p>
-                <button>Submit</button>
-            </form>
 
+                <!-- text area attributes: width=cols height=rows -->
+                <!-- create a label for the textarea tag. The textarea tag is where the actual text goes -->
+                <p>
+                    <label for="requests">Type into this Box</label>
+                    <textarea id="requests" name="reqs" rows="10" cols="20" placeholder="Type Something Here!"></textarea>
+                </p>
+
+                <button>Submit Button</button>
+            </form>
+    </section>
+
+    <hr>
+
+    <section>
+        <!-- Here we are Error Checking a control  -->
+        <!-- attributes: required min length max length -->
+        <h2>Form Validations</h2>
+            <form action="/bananas">
+                <!-- required tag makes sure there's text -->
+                <label for="required1"></label>
+                <input type="text" name="funny" id="required1" required>
+                <!-- bind label and control together -->
+                <!-- validating length of text -->
+                <label for="length"></label>
+                <input type="text" name="lengthy" id="length" minlength="5" maxlength="10">
+
+                <!-- adding email input type and required tag makes it so the @ symbol is  needed to submit it -->
+                <p>
+                    <input type="email" required>
+                </p>
+
+                <button type="submit">Submit</button>
+            </form>
     </section>
     
 </body>
