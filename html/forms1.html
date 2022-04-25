@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<!-- Here we're creating a form tag -->
+<body>
+    <section>
+        <h1>UserName and Password</h1>
+        <!-- action is where all the information is going to go -->
+            <form action="/tacos">
+
+                <p>
+                <!-- things inside the tag are called attributes -->
+                <!-- Here we are creating a label tag for username -->
+
+                    <label for="username">Enter A Name:</label>
+                    <input id="username" type="text" placeholder="Username" name="username">
+                </p>
+                <!-- Now we're creating a label tag for the password -->
+                <p>
+                    <label for="password">Enter A Password:</label>
+                    <input id="password" type="text" placeholder="Password" name="password">
+                </p>
+                <!-- Place button inside form tag, used as an object control -->
+                <button>Subtmit Button</button>
+            </form>
+    </section>
+<hr>
+<!-- divide the two sections -->
+    <section>
+
+        <h1>Query Strings</h1>
+        <!-- add the search query here for Google -->
+        <form action="https://www.google.com/search">
+            
+            <input type="text" name="q">
+            <!-- submit button will append the input to the action which is the search query -->
+            <button>Search Google </button>
+        </form>
+
+        <!-- New search query for Reddit -->
+
+        <form action="https://www.reddit.com/search">
+            <input type="text" name="q">
+            <!-- submit button will append the input to the action which is the search query -->
+            <button>Search Reddit </button>
+        </form>
+
+        <!-- New search query in for Youtube -->
+
+        <form action="https://www.youtube.com/search">
+            <input type="text" name="q">
+            <button>Search Youtube </button>
+        </form>
+
+    </section>
+    <!-- next section is to create a checkbox and radio tags  -->
+    <section>
+        <h1>Radio Buttons and Checkboxes</h1>
+            <form action="birds">
+                <label for="agree">I agree to everything</label>
+                <input type="checkbox" name="agree_tos" id="agree">
+                <!--  Radio tags need a label and input as radio-->
+                <p>
+                    <label for="s">Small</label>
+                    <input type="radio" name="size" id="s" value="s">
+
+                    <label for="m">Medium</label>
+                    <input type="radio" name="size" id="m" value="m">
+
+                    <label for="l">Large</label>
+                    <input type="radio" name="size" id="l" value="l">
+                    <button>Submit</button>
+                </p>
+                    <!-- "label for" is used to tie the input type with "id" -->
+                    <!-- select tag is used as a dropdown box to select an item -->
+                <p>
+                    <label for="favColor">What is your favorite color?</label>
+
+                    <select name="favorite" id="favColor">
+
+                        <option value="red">Red</option>
+                        
+                        <option value="silver">Silver</option>
+
+                        <option value="blue">Blue</option>
+
+                    </select>
+                </p>
+            </form>
+    </section>
+    
+</body>
+</html>
