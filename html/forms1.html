@@ -61,7 +61,8 @@
     <!-- next section is to create a checkbox and radio tags  -->
     <section>
         <h1>Radio Buttons and Checkboxes</h1>
-            <form action="birds">
+
+            <form action="/birds">
                 <label for="agree">I agree to everything</label>
                 <input type="checkbox" name="agree_tos" id="agree">
                 <!--  Radio tags need a label and input as radio-->
@@ -74,24 +75,34 @@
 
                     <label for="l">Large</label>
                     <input type="radio" name="size" id="l" value="l">
-                    <button>Submit</button>
                 </p>
-                    <!-- "label for" is used to tie the input type with "id" -->
-                    <!-- select tag is used as a dropdown box to select an item -->
+                <!-- "label for" is used to tie the input type with "id" -->
+                <!-- select tag is used as a dropdown box to select an item -->
                 <p>
                     <label for="favColor">What is your favorite color?</label>
-
+                    
                     <select name="favorite" id="favColor">
-
+                        
                         <option value="red">Red</option>
                         
                         <option value="silver">Silver</option>
-
+                        
                         <option value="blue">Blue</option>
-
+                        
                     </select>
                 </p>
+                
+                <!-- Adding Scroll Bar  -->
+                <!-- First make a label for the scroll bar with attributes max min type=range -->
+                <p>
+                    
+                    <label for="scrollbar">Micah's Scrollbar</label>
+                    <input type="range" id="scrollbar" min="0" max="100" name="scrollbar">
+
+                </p>
+                <button>Submit</button>
             </form>
+
     </section>
     
 </body>
