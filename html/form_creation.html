@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Creation</title>
+</head>
+<body>
+    <h1>Please fill out the form below</h1>
+
+    <form action="/submitfood">
+        <p>
+            <label for="firstname">First Name:</label>
+            <input id="firstname" type="text" placeholder="First Name" name="firstname" minlength="3" maxlength="10" required>
+        </p>
+
+        <p>
+            <label for="lastname">Last Name:</label>
+            <input id="lastname" type="text" placeholder="Last Name" name="lastname" minlength="3" maxlength="10" required>
+        </p>
+
+        <p>
+            <label for="food">Which food would you like to eat?</label>
+            <select name="selectfood" id="food">
+                
+                <option value="Chicken">Chicken</option>
+                <option value="Beef">Beef</option>
+                <option value="Fish">Fish</option>
+
+            </select>
+        </p>
+
+        <p>
+            <label for="allergies">Do you have any allergies?</label>
+            <textarea id="allergies" name="allergens" rows="5" cols="10" placeholder="List Allergies..."></textarea>
+        </p>
+
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
