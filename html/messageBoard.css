@@ -39,3 +39,43 @@ h1,h2{
 .post a{
     color: hotpink;
 }
+
+/* for descenent selectors you can either use ">" symbol to select the descendent
+or you can use a single space " " like for the styling above */
+footer > a{
+    color:green;
+}
+
+/* Attribute selectors. Select only a specific attribute of an input of a tag. 
+style HTML elements that have specific attributes or attribute values. */
+input[type="password"]{
+    color: red;
+}
+
+/* "*=" means check these exact characters */
+a[href*="google"]{
+    color:darkorange;
+}
+
+/* pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s) */
+
+button:hover {
+    background-color: red;
+    color:aquamarine;
+}
+
+/* This is to add pseudo-class as a descendent selector */
+.post button:active{
+    background-color: green;
+}
+
+/* call the element first, add two semi colons  */
+/* pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). */
+h2::first-letter{
+    font-size: 50px;
+}
+
+/* This pseudo element changes the first line to green */
+p::first-line {
+    color: green;
+}

@@ -1,0 +1,29 @@
+.crimson{
+    color: crimson;
+}
+
+.greenish{
+    color: green;
+}
+
+.yellowish{
+    color:#FBEC5D;
+}
+
+.red{
+    color:red;
+}
+
+.orange{
+    color: #cc5500;
+}
+
+#yesbtn{
+    background-color: green;
+    color: white;
+}
+
+#nobtn{
+    background-color:red;
+    color: white;
+}
