@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <!-- href is to link the css document from the same folder that this html file is in -->
+    <link rel="stylesheet" href="messageBoard.css">
+    
+</head>
+<body>
+    <!-- create a label/textbox. Placeholder is the text you say thats presented first -->
+    <nav>
+        <label for="search">Search</label>
+        <input type="text" placeholder="Search" id="search">
+        
+        <input type="password" placeholder="Enter Password">
+        <button>Log In</button>
+        <!-- using id is a class selector to identify the button  -->
+        <button id="signup">Sign Up</button>
+    </nav>
+    <!-- Here we're creating different sections of Posts -->
+    <main>
+        <h1>Micah is very Hyper!</h1>
+        <!-- For each section we are creating a post for each user, the span tag lists and links the author of the post -->
+            <section class="post">
+                <span>Posted by <a href="25423">UchihaMadara123</a></span>
+                <!-- use span to isolate an individual word to style it -->
+                <h2><span class ="firstword">Uchiha</span> Madara is the strongest Character in Naruto</h2>
+                <button>+Vote</button>
+                <hr>
+            </section>
+
+            <section class="post">
+                <span>Posted by <a href="4544863">Uchihagod</a></span>
+                <h2><span class="firstword">Uchiha</span>  are OP.</h2>
+                <button>+Vote</button>
+                <hr>
+            </section>
+
+            <section class="post">
+                <span>Posted by <a href="44858">OtsutsukiKaguya</a></span>
+                <h2><span class="firstword">bleh</span>, we all know Otsutsuki clan is god tier.</h2>
+                <button>+Vote</button>
+                <hr>
+            </section>
+
+            <section>
+                
+            </section>
+    </main>
+
+
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="https://www.google.com">Google</a>
+                </li>
+            </ul>
+        </nav>
+
+        
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+/* * is the universal selector that selects everything on the webpage */
+/* *{
+    color: pink;
+    background-color: green;
+    
+} */
+
+
+/* element type selector that selects everything in the body */
+body{
+    background-color: beige;
+}
+
+/* selects all button tag and add's associated css style */
+button{
+    font-size: 30px;
+}
+
+/* You can select multiple tags by separating them with commas */
+h1,h2{
+    color:crimson;
+}
+
+/* here we are selecting id tags "id selector" Use the pound symbol to select it  */
+#signup{
+    background-color: pink;
+    color:blue;
+}
+
+
+/* *=universal #=id .=class */
+/* linking through class we need a period */
+.firstword{
+    color:green;
+}
+
+/* called descendent selectors */
+
+.post a{
+    color: hotpink;
+}
