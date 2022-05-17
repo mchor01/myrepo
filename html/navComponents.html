@@ -17,18 +17,130 @@
         <div class="container-fluid">
             <!-- inserting an icon that directs you to a url page -->
             <a class="navbar-brand" href="https://www.google.com">
-                <img src="https://wallpapercave.com/uwp/uwp1426727.jpeg" alt="" width="100" height="70" class="d-inline-block align-text-top">
+                <img src="https://wallpapercave.com/uwp/uwp1426727.jpeg" alt="" width="75" height="50" class="d-inline-block align-text-top">
                 Branding
             </a>
-            
+            <!-- Hamburger Menu: This Hamburger menu allows you to have your navigation links display and sppears when 
+            the screen reaches a certain size -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navbar1">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- Tie div class to hamburger menu -->
+            <div class="collapse navbar-collapse" id="navbar1">
+                <!-- This will serve as a place to hold our links/nav bar-->
+                <ul class="navbar-nav d-flex me-auto">
+                    <!--  create list items with associated class-->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://www.google.com">First</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://www.google.com">Second</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://www.google.com">Third</a>
+                    </li>
+                    
+                    <!-- reference the dropdown -->
+                    <li class="nav-item dropdown">
+                        <!-- create the button that will activate the dropdown list -->
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">More</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://www.google.com" class="dropdown-item">FirstDropdown</a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.google.com" class="dropdown-item">SecondDropdown</a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.google.com" class="dropdown-item">ThirdDropdown</a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.google.com" class="dropdown-item">FourthDropdown</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+                <!-- me-2 stands for margin end with 2 being the size -->
+                <!-- create a form that will submit information into the url-->
+                <!-- flex allows the search button to be formatted next to the search box -->
+                <form class="d-flex" action="/testing">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            
+
+            </div>
         </div>
     </nav>
     
+    <br>
+    <br>
+        <!-- Create a new section utilizing bootstrap library to style tags -->
+        <section>
+            <!-- encapsulates the div, visually showing a container -->
+            <div class="container card">
+                <h1>Header without Bootstrap Class</h1>
+
+                <!-- "display-1 is part of the bootstrap topography library" -->
+                <h1 class="display-1 text-center text-primary">Header with Bootstrap Class</h1>
+                <h1 class="display-4 text-center">Display 4 Header</h1>
+
+                <!-- hr is used to segment the container -->
+                <hr>
+
+                <!-- using bootstrap library to style buttons -->
+                <button type="button" class="btn btn-success">GreenColor</button>
+                <button type="button" class="btn btn-primary">BlueColor</button>
+                <button type="button" class="btn btn-warning">YellowColor</button>
+                <!-- for using the class, first define the element, then the styling -->
+                <button class="btn btn-outline-danger">RedButtonOutline</button>
+
+                <hr>
+
+                <h1 class="display-4 text-center">Paragraph Text</h1>
+                <!-- bootstrap automatically styles the p rag -->
+                <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis sunt ullam nostrum reiciendis fugit, 
+                placeat laboriosam dolores? Assumenda, consectetur quod ducimus possimus temporibus explicabo, alias voluptatum
+                repudiandae obcaecati officiis optio.
+                </p>
+
+                <hr>
+                <!-- Create a section for button groups -->
+                <h1 class="display-4 text-center">Group Buttons</h1>
+                <!-- Button groups are a group of buttons on the same line. Make sure to add all buttons within the btn-group div -->
+                <div class="btn-group">
+                    <button class="btn btn-outline-primary">One</button>
+                    <button class="btn btn-outline-primary">Two</button>
+                    <button class="btn btn-outline-primary">Three</button>
+
+                </div>
+
+                <hr>
+                <br>
+                <h1 class="display-4 text-center">Image Source with Bootstrap</h1>
+                <img src="https://64.media.tumblr.com/38539548fe45571e5498891ecf0bf3f6/6763e28fb06172cf-6c/s540x810/f57b3c37ad46499880c3f05e17a4c9bc3a044440.jpg">
+
+                <!-- For quoting blocks of content from another source within your document -->
+                <blockquote class="blockquote text-left bg-light">
+                    <!-- setting margins -->
+                    <p class="mb-2">"Killua being Killua"</p>
+
+                    <!-- puts a dash and puts a lighter background transparency to the text -->
+                    <footer class="blockquote-footer">Micah</footer>
+                </blockquote>
+            </div>
 
 
+        </section>
+
+<!-- this is the javascript that will enable javascript functions to be added -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
