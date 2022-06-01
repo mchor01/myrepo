@@ -120,3 +120,20 @@ console.log(li[1]);
 li[1].textContent = "Hello 2 Now";
 li[1].style.fontWeight = 'bold';
 li[1].style.backgroundColor = 'green';
+li[1].style.color = 'white';
+
+// using a for loop to style the selected tags
+for(var i = 0; i < li.length; i++){
+    li[i].style.backgroundColor = 'lightgrey';
+    li[i].textContent = "I changed the Items from the DOM";
+    li[i].style.color = 'black';
+}
+
+////////////////////////////////////////////////////////
+// Document.querySelector()
+// grabs the first element that comes up in the DOM 
+var header = document.querySelector('#main-header');
+header.style.borderBottom = 'solid 4px hotpink';
+
+var input = document.querySelector('input');
+input.value = "I changed the text value of this input box";
