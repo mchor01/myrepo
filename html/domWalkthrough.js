@@ -135,5 +135,40 @@ for(var i = 0; i < li.length; i++){
 var header = document.querySelector('#main-header');
 header.style.borderBottom = 'solid 4px hotpink';
 
+// using querySelector that picks the first input type it finds
 var input = document.querySelector('input');
 input.value = "I changed the text value of this input box";
+
+// you can also specify the attribute within the querySelector()
+var submit = document.querySelector('input[type="submit"]');
+submit.value = "hello button";
+
+// selects the last child of the parent element that's selected by the documentquery
+var lastItem = document.querySelector('.list-group-item:last-child');
+lastItem.style.color = 'blue';
+
+// nth child selector matches every element that is the nth child of it's parent
+var otherItem = document.querySelector('.list-group-item:nth-child(2)');
+otherItem.style.color = 'coral';
+
+// ////////////////////////////////
+
+// selects all elements with the class name of title, returns a list of items
+var titles = document.querySelectorAll('.title');
+console.log(titles);
+
+// changes the first title element to Hello!
+titles[0].textContent = 'Hello!';
+
+// create a variable using queryselectorAll nth child to select only the even and odd elements
+var odd = document.querySelectorAll('li:nth-child(odd)');
+var even = document.querySelectorAll('li:nth-child(even)');
+
+// Use a for loop to loop through each list item and apply it to even and odd. 
+for (var i = 0; i < odd.length; i ++){
+
+    odd[i].style.backgroundColor = 'grey';
+    even[i].style.backgroundColor = 'blue';
+    even[i].style.color = 'whitesmoke';
+    odd[i].style.color = 'whitesmoke';
+}
