@@ -78,7 +78,7 @@ if (password.length >= 6) {
     } else {
         console.log("Password can't have spaces");
     }
-
+// else statements are included within the nest
 } else {
     console.log("Password is too short");
 }
@@ -92,8 +92,10 @@ function singSong() {
     console.log("ME");
 }
 
+// this declaration is what calls the function to run
 singSong()
 
+// new function with arguements
 function greet(firstName, lastName) {
     // `` is called a template literal where you can add in an arguement/parameter
     console.log(`Hey There, ${firstName} ${lastName}`)
